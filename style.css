@@ -3,3 +3,81 @@ body {
   height: 100%;
   margin: 0;
 }
+/* Header Center Alignment */
+header {
+  text-align: center;
+}
+
+/* Navigation Links Styling */
+nav a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #dddddd; /* Grey background */
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 3px;
+}
+
+/* Center Featured Image */
+#featured-property img {
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Image Caption Styling */
+#featured-property figcaption {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Text Block Styling */
+#featured-property p {
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Details Section Horizontal Layout */
+#details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+#details div {
+  width: 25%;
+  text-align: center;
+}
+
+/* Footer Links Styling */
+#details a {
+  color: #4aaaa5;
+  text-decoration: none;
+}
+
+#details a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #details {
+    flex-direction: column;
+  }
+  
+  #details div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #featured-property p {
+    width: 90%;
+  }
+}
